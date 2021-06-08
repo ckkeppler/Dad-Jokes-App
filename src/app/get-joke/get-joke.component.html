@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Random Dad Joke Generator</h1>
+  <div class="joke">
+    <p *ngIf="!saved">{{ joke }}</p>
+  </div>
+  <button mat-raised-button color="accent" class="button" (click)="getJoke()">
+    Get It
+  </button>
+  <button mat-raised-button color="primary" class="button" (click)="saveJoke()">
+    Save It
+  </button>
+</div>

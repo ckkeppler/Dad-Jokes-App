@@ -1,0 +1,7 @@
+<button mat-raised-button color="accent" class="button" (click)="deleteJokes()">
+  Clear all saved jokes
+</button>
+
+<div *ngIf="jokes">
+  <p *ngFor="let joke of jokes">{{ joke.joke }}</p>
+</div>
