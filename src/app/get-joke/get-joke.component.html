@@ -3,10 +3,17 @@
   <div class="joke">
     <p *ngIf="!saved">{{ joke }}</p>
   </div>
-  <button mat-raised-button color="accent" class="button" (click)="getJoke()">
-    Get It
-  </button>
-  <button mat-raised-button color="primary" class="button" (click)="saveJoke()">
-    Save It
-  </button>
+  <div class="button-container">
+    <button mat-raised-button color="accent" class="button" (click)="getJoke()">
+      Get It
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      class="button"
+      (click)="saveJoke()"
+    >
+      Save It
+    </button>
+  </div>
 </div>

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Joke, JokeService } from '../joke.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-get-joke',
@@ -51,6 +50,7 @@ export class GetJokeComponent implements OnInit {
 
       this.openSnackBar('Joke saved!');
     }
+    this.query = false;
   }
 
   openSnackBar(message: string) {
