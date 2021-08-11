@@ -2,6 +2,6 @@
   Clear all saved jokes
 </button>
 
-<div *ngIf="jokes">
+<details *ngIf="jokes">
   <p *ngFor="let joke of jokes">{{ joke.joke }}</p>
-</div>
+</details>
